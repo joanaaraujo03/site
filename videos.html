@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+
+
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h4{
+            font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item iframe {
+            flex: 1 1 50%;
+            min-height: 300px;
+            border: none;
+        }
+
+        .gallery-item .content {
+            flex: 1 1 50%;
+            padding: 20px;
+            color: #000;
+        }
+
+        .gallery-item h4 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item p {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Âmbito Académico -->
+        <section id="academico">
+            <h2 section-title mb-6 >Âmbito Académico</h2>
+            <div class="gallery">
+                <!-- Vídeo 1 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/YjYQbg21dO8" allowfullscreen></iframe>
+                    <div class="content">
+                        <h4>Animação - A Cegonha Azarada</h4>
+                        <p>
+                            No âmbito da cadeira de Vídeo Animação elaborei em grupo uma animação. A narrativa trata-se de
+                            uma cegonha que vai buscar um bebé à “fábrica dos bebés” e leva-a até aos pais. O fator que
+                            diferencia a cegonha protagonista das outras é que esta é muito azarada, então ao longo do
+                            caminho depara-se com vários obstáculos, como por exemplo, as alterações repentinas do tempo,
+                            beber água de um rio que estava intoxicado, deixar cair o bebé, etc.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vídeo 2 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/0km-4KM8w2E" allowfullscreen></iframe>
+                    <div class="content">
+                        <h4>Curta-Metragem - Amor pela Inteligência Artificial</h4>
+                        <p>
+                            No âmbito da cadeira Vídeo e Animação elaborei em grupo uma Curta-Metragem. A curta aborda a
+                            história de uma jovem que se apaixona por uma inteligência Artificial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Âmbito Pessoal -->
+        <section id="pessoal">
+            <h2>Âmbito Pessoal</h2>
+            <p class="intro">
+                Para mim, o multimédia é mais do que uma profissão, é uma forma de contar histórias e criar experiências. Viajar tem sido uma das minhas maiores inspirações, permitindo-me  capturar momentos únicos. Cada vídeo que criei é um reflexo da minha visão criativa e do meu interesse e amor pela edição e produção de vídeos. Ao partilhar estes trabalhos, pretendo mostrar não só as minhas competências técnicas, mas também o meu hobbie em criar conteúdos.
+            </p>
+            <div class="gallery">
+                <!-- Vídeo 1 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/m8IC5gMYd0s" allowfullscreen></iframe>
+                </div>
+
+                <!-- Vídeo 2 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/zSbfc_Htzrw" allowfullscreen></iframe>
+                </div>
+
+                <!-- Vídeo 3 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/PrYdz2XIk7Q" allowfullscreen></iframe>
+                </div>
+
+                <!-- Vídeo 4 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/Sk-keb8l0Hw" allowfullscreen></iframe>
+                </div>
+
+                <!-- Vídeo 5 -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/y0HyD61z1G0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

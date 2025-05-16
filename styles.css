@@ -1,0 +1,641 @@
+/* General Styles */
+
+@font-face {
+    font-family: 'Bablegam';
+    src: url(Babelgam.otf) format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tommy';
+    src: url(MADE\ Tommy\ Soft\ Bold\ PERSONAL\ USE.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+h2{
+    margin: -17px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+/* Quando faz scroll (muda para fundo branco e texto roxo) */
+.custom-navbar.scrolled {
+    background: white; /* Fundo branco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar.scrolled .logo,
+.custom-navbar.scrolled .nav .link {
+    color: #6a3ea1 !important; /* Garante que a cor é aplicada */
+}
+
+.custom-navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff; /* Baby purple */
+    text-decoration: none;
+    font-family: 'Bablegam', sans-serif; 
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
+.custom-navbar .nav {
+    list-style: none;
+    padding: 0;
+    float: right;
+}
+
+.custom-navbar .nav .item {
+    display: inline;
+    margin-left: 20px;
+}
+
+.custom-navbar .nav .link {
+    text-decoration: none;
+    color:  white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav .link:hover {
+    color: #6a3ea15b;
+}
+
+/* Estilos do botão hamburguer */
+.nav-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #6a3ea1; /* Roxo */
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1500;
+}
+
+/* Navbar responsiva */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #6a3ea15b;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px 15px;
+        width: auto;
+        min-width: 180px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav .item {
+        padding: 8px 0;
+        margin: 1px;
+    }
+
+    .nav .link {
+        color: #6a3ea1; /* Roxo */
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .nav .link:hover {
+        color: #54368c; /* Roxo mais escuro */
+    }
+
+    /* Exibir o menu de forma discreta */
+    .nav.show {
+        display: flex;
+    }
+
+    /* Mostrar botão do menu */
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Header Styles */
+.header {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #9e93c6, #ffffff);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header .header-title {
+    font-size: 4em;
+    animation: fadeIn 1s ease-in-out;
+    color: rgb(95, 94, 94);
+    font-family: 'tommy', sans-serif;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px;
+    font-family: 'tommy', sans-serif;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #695aa6;
+    padding: 0px;
+}
+
+/* About Section */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Imagem do Perfil */
+.about-img-holder {
+    flex: 1;
+    max-width: 350px;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Texto */
+.about-caption {
+    flex: 2;
+    max-width: 600px;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #888;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Percurso Académico */
+.timeline-section {
+    margin-top: 20px;
+}
+
+.timeline-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.timeline-item {
+    background: #f8f2f281;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0px;
+}
+
+/* Botão de Download */
+.btn-download {
+    margin-top: 20px;
+    margin-left: 200px;
+    background: none;
+    border: 1px solid #695aa6;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-download a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background: #695aa6;
+}
+
+.btn-download:hover a {
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img-holder {
+        max-width: 250px;
+    }
+}
+
+/*SKILLS SECTION */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cartões */
+.skills-card {
+    background: #f8f2f281;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.skills-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Skills individuais */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item p {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+/* Estilização da barra de progresso */
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0; /* Começa com 0 para animar */
+    background-color: #6a3ea1; /* Roxo */
+    transition: width 1.5s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Barra de Progresso */
+/* Seção de Portfólio */
+#portfolio {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Garantir que os itens do portfólio tenham a mesma altura */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.portfolio-item {
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    height: 400px; /* Define altura fixa */
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém proporção */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsivo: Ajustar layout no iPhone */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/* Efeito Hover */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Sobreposição branca translúcida */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a3ea1; /* Roxo baby */
+    margin-bottom: 5px;
+}
+
+.portfolio-overlay p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Animação do Hover */
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+    }
+}
+
+
+
+/*Experiencia section */
+/* Seção de Experiências Profissionais */
+#blog {
+    padding: 60px 0;
+}
+
+/* Cartões das Experiências */
+.experience-card {
+    width: 85%; /* Ocupa toda a largura da tela */
+    background: #f8f2f281;
+    padding: 40px 60px; /* Aumenta o espaçamento interno */
+    border-radius: 0; /* Remove bordas arredondadas para ocupar todo o espaço */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* Conteúdo dentro dos cartões */
+
+/* Títulos dentro dos cartões */
+.experience-card h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Data */
+.date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Link de download */
+.download-link {
+    text-decoration: none;
+    color: #6a3ea1; /* Roxo baby */
+    font-weight: bold;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .experience-card {
+        padding: 30px;
+    }
+}
+
+/* Button Styles */
+
+
+
+
+/* Seção de Contactos */
+#contact {
+    padding: 60px 0;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Cartões de Contacto */
+.contact-card {
+    background: #f8f2f281;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Título do Card */
+.contact-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Texto do Card */
+.contact-card p,
+.contact-card a {
+    font-size: 1rem;
+    color: #6a3ea1; /* Roxo baby */
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 80%;
+    }
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #6a3ea1; /* Roxo */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar botão quando visível */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Efeito hover */
+.back-to-top:hover {
+    background-color: #54368c; /* Roxo mais escuro */
+}
+
