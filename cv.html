@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV – Joana Araújo</title>
+  <link rel="stylesheet" href="/styles.css?v=4">
+  <script src="/script.js?v=11" defer></script>
+</head>
+<body class="cv-page" data-page="cv">
+
+  <div class="cv-topbar">
+    <div class="cv-topbar__left">
+      <a href="projetos.html" class="cv-topbar-link">Ver Portfolio</a>
+      <a href="#cv-downloads" class="cv-topbar-link cv-topbar-link--download">Descarregar CV</a>
+    </div>
+    <div class="cv-topbar__actions">
+      <button id="cv-theme-toggle" class="cv-theme-btn" aria-label="Alternar tema">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button id="cv-lang-toggle" class="cv-lang-btn" aria-label="Mudar idioma para inglês">EN</button>
+    </div>
+  </div>
+
+  <section class="cv-hero">
+    <div class="cv-hero__bg" aria-hidden="true">
+      <span class="cv-orb cv-orb-1"></span>
+      <span class="cv-orb cv-orb-2"></span>
+      <span class="cv-orb cv-orb-3"></span>
+    </div>
+
+    <div class="cv-float-tags" aria-hidden="true">
+      <span class="cv-float-tag cv-float-tag--1">UI/UX</span>
+      <span class="cv-float-tag cv-float-tag--2">React</span>
+      <span class="cv-float-tag cv-float-tag--3">Figma</span>
+      <span class="cv-float-tag cv-float-tag--4">Frontend</span>
+      <span class="cv-float-tag cv-float-tag--5">Design</span>
+      <span class="cv-float-tag cv-float-tag--6">HTML·CSS</span>
+    </div>
+
+    <div class="cv-hero__inner">
+      <p class="cv-eyebrow" data-cv="eyebrow">Curriculum Vitae</p>
+
+      <div class="cv-name-block">
+        <h1 class="cv-name">
+          <span class="cv-name__line cv-name__line--1">JOANA</span>
+          <span class="cv-name__line cv-name__line--3">ARAÚJO</span>
+        </h1>
+        <div class="cv-name__middle">
+          <span class="cv-role-badge cv-role-badge--wide" data-cv="role-badge">Multimédia | Web Design | Interfaces Digitais</span>
+        </div>
+        <div class="cv-hero-actions">
+          <a href="mailto:joanacunhaaraujo@gmail.com?subject=Contacto%20via%20CV%20Online" class="cv-hero-contact-btn">Vamos conversar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-scroll-hint" aria-hidden="true">
+      <span class="cv-scroll-hint__text" data-cv="scroll-hint">Ver mais</span>
+      <span class="cv-scroll-line"></span>
+    </div>
+  </section>
+
+  <div class="cv-stats-strip">
+    <div class="cv-stat cv-reveal">
+      <span class="cv-stat__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20h9"/>
+          <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+        </svg>
+      </span>
+      <span class="cv-stat__label" data-cv="stat-1-label">Design Gráfico</span>
+    </div>
+    <div class="cv-stat cv-reveal" style="--delay:0.1s">
+      <span class="cv-stat__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m10 9 5 3-5 3Z"/>
+        </svg>
+      </span>
+      <span class="cv-stat__label" data-cv="stat-2-label">Edição de Vídeo</span>
+    </div>
+    <div class="cv-stat cv-reveal" style="--delay:0.2s">
+      <span class="cv-stat__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="16" rx="2"/>
+          <path d="M8 8h8M8 12h4M8 16h6"/>
+        </svg>
+      </span>
+      <span class="cv-stat__label" data-cv="stat-3-label">Interfaces Digitais</span>
+    </div>
+    <div class="cv-stat cv-reveal" style="--delay:0.3s">
+      <span class="cv-stat__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m8 9-4 3 4 3"/>
+          <path d="m16 9 4 3-4 3"/>
+          <path d="m14 5-4 14"/>
+        </svg>
+      </span>
+      <span class="cv-stat__label" data-cv="stat-4-label">Frontend</span>
+    </div>
+  </div>
+
+  <div class="cv-body" id="cv-content">
+    <div class="cv-layout">
+      <aside class="cv-sidebar">
+        <div class="cv-sidebar-photo cv-reveal">
+          <img src="assets/imgs/cv.png" alt="Joana Araújo" class="cv-sidebar-photo__img" />
+        </div>
+
+        <div class="cv-widget cv-reveal" style="--delay:0.05s">
+          <h3 class="cv-widget__title" data-cv="contact-title">Contacto</h3>
+          <ul class="cv-contact-list">
+            <li>
+              <span class="cv-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+              <a href="mailto:joanacunhaaraujo@gmail.com">joanacunhaaraujo@gmail.com</a>
+            </li>
+            <li>
+              <span class="cv-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 9.5a19.79 19.79 0 0 1-3-8.59A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <a href="tel:+351932091970">+351 932 091 970</a>
+            </li>
+            <li>
+              <span class="cv-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span>
+              <a href="https://www.linkedin.com/in/joana-ara%C3%BAjo-5a7104370/" target="_blank" rel="noopener">linkedin.com/in/joana-araújo</a>
+            </li>
+            <li>
+              <span class="cv-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span data-cv="location">Porto, Portugal</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv-widget cv-reveal" style="--delay:0.1s">
+          <h3 class="cv-widget__title" data-cv="languages-title">Idiomas</h3>
+          <ul class="cv-lang-list">
+            <li class="cv-lang-item">
+              <div class="cv-lang-header">
+                <span class="cv-lang-name" data-cv="lang-1-name">Português</span>
+                <span class="cv-lang-level" data-cv="lang-1-level">Nativo</span>
+              </div>
+              <div class="cv-lang-bar"><div class="cv-lang-fill" style="--fill-width:100%"></div></div>
+            </li>
+            <li class="cv-lang-item">
+              <div class="cv-lang-header">
+                <span class="cv-lang-name" data-cv="lang-2-name">Inglês</span>
+                <span class="cv-lang-level" data-cv="lang-2-level">Avançado</span>
+              </div>
+              <div class="cv-lang-bar"><div class="cv-lang-fill" style="--fill-width:85%"></div></div>
+            </li>
+            <li class="cv-lang-item">
+              <div class="cv-lang-header">
+                <span class="cv-lang-name" data-cv="lang-3-name">Espanhol</span>
+                <span class="cv-lang-level" data-cv="lang-3-level">Básico</span>
+              </div>
+              <div class="cv-lang-bar"><div class="cv-lang-fill" style="--fill-width:30%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv-widget cv-reveal" style="--delay:0.15s">
+          <h3 class="cv-widget__title" data-cv="soft-skills-title">Competências Pessoais</h3>
+          <div class="cv-soft-skills" id="cv-soft-skills"></div>
+        </div>
+
+        <div class="cv-widget cv-widget--cta cv-reveal" style="--delay:0.18s">
+          <a href="projetos.html" class="cv-projects-btn cv-projects-btn--block">Ver Portfolio</a>
+        </div>
+
+        <div class="cv-widget cv-widget--cta cv-reveal" id="cv-downloads" style="--delay:0.22s">
+          <a href="cv_Joana_Araujo.pdf" download class="cv-dl-btn">Descarregar CV PT</a>
+          <a href="cv_Joana_Araujo_en.pdf" download class="cv-dl-btn cv-dl-btn--outline">Descarregar CV EN</a>
+        </div>
+      </aside>
+
+      <main class="cv-main-content">
+        <section class="cv-section cv-reveal">
+          <h2 class="cv-section__title" data-cv="about-title">Perfil Profissional</h2>
+          <p class="cv-about-text" data-cv="about-text">Sou licenciada em Multimédia e Tecnologias da Comunicação pela Universidade de Aveiro e estou atualmente a concluir o Mestrado em Multimédia na Universidade do Porto. O meu percurso cruza design de comunicação, produção multimédia e desenvolvimento de interfaces digitais, áreas onde consigo combinar criatividade com uma componente técnica. Tenho especial interesse por edição de vídeo, design gráfico e frontend, sobretudo em projetos que envolvam experiências digitais claras, intuitivas e visualmente consistentes.</p>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title cv-reveal" data-cv="exp-title">Percurso Profissional</h2>
+          <div class="cv-timeline">
+            <div class="cv-timeline__item cv-reveal" style="--stagger:0s">
+              <span class="cv-timeline__date" data-cv="exp-1-date">Abril 2026 – Presente</span>
+              <div class="cv-timeline__content">
+                <h4 class="cv-timeline__title" data-cv="exp-1-title">Web Design, Multimédia e Programação de Interfaces de Utilizador</h4>
+                <p class="cv-timeline__company" data-cv="exp-1-company">Invisible Cloud, Porto</p>
+                <p class="cv-timeline__desc" data-cv="exp-1-desc">Desenvolvo soluções digitais, conteúdos multimédia e interfaces de utilizador, com foco em clareza visual, usabilidade e consistência.</p>
+                <a href="https://invisiblecloud.pt" target="_blank" rel="noopener" class="cv-timeline__link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  invisiblecloud.pt
+                </a>
+              </div>
+            </div>
+
+            <div class="cv-timeline__item cv-reveal" style="--stagger:0.12s">
+              <span class="cv-timeline__date" data-cv="exp-2-date">Outubro 2025 – Março 2026</span>
+              <div class="cv-timeline__content">
+                <h4 class="cv-timeline__title" data-cv="exp-2-title">Estágio IEFP</h4>
+                <p class="cv-timeline__company" data-cv="exp-2-company">Invisible Cloud, Porto</p>
+                <p class="cv-timeline__desc" data-cv="exp-2-desc">Colaborei em projetos digitais na área do multimédia, design e interfaces, consolidando competências em contexto profissional.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline__item cv-reveal" style="--stagger:0.24s">
+              <span class="cv-timeline__date" data-cv="exp-3-date">2025</span>
+              <div class="cv-timeline__content">
+                <h4 class="cv-timeline__title" data-cv="exp-3-title">Desenvolvimento Web Freelance</h4>
+                <p class="cv-timeline__company" data-cv="exp-3-company">Conta própria</p>
+                <p class="cv-timeline__desc" data-cv="exp-3-desc">Crio websites e portfólios digitais de forma autónoma, acompanhando o processo desde a componente visual até à implementação funcional.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title cv-reveal" data-cv="education-title">Percurso Académico</h2>
+          <div class="cv-timeline">
+            <div class="cv-timeline__item cv-reveal" style="--stagger:0s">
+              <span class="cv-timeline__date" data-cv="edu-1-date">2024 – Presente</span>
+              <div class="cv-timeline__content">
+                <h4 class="cv-timeline__title" data-cv="edu-1-degree">Mestrado em Multimédia</h4>
+                <p class="cv-timeline__company" data-cv="edu-1-school">Universidade do Porto, Porto</p>
+                <p class="cv-timeline__desc" data-cv="edu-1-note">Formação multidisciplinar em multimédia, com foco em design de interação, interfaces digitais e comunicação visual.</p>
+                <a href="https://fe.up.pt/estudar/mm/" target="_blank" rel="noopener" class="cv-timeline__link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span data-cv="edu-1-link">Ver curso</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="cv-timeline__item cv-reveal" style="--stagger:0.12s">
+              <span class="cv-timeline__date" data-cv="edu-2-date">2021 – 2024</span>
+              <div class="cv-timeline__content">
+                <h4 class="cv-timeline__title" data-cv="edu-2-degree">Licenciatura em Multimédia e Tecnologias da Comunicação</h4>
+                <p class="cv-timeline__company" data-cv="edu-2-school">Universidade de Aveiro, Aveiro</p>
+                <p class="cv-timeline__desc" data-cv="edu-2-note">Base multidisciplinar em design, desenvolvimento web, audiovisual, comunicação digital e prototipagem.</p>
+                <a href="https://www.ua.pt/pt/curso/1531" target="_blank" rel="noopener" class="cv-timeline__link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span data-cv="edu-2-link">Ver curso</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title cv-reveal" data-cv="skills-title">Competências Técnicas</h2>
+          <div class="cv-skill-groups" id="cv-skill-groups"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="cv-footer-bar">
+    <p class="cv-footer-copy">© <span data-current-year></span> Joana Araújo</p>
+  </footer>
+</body>
+</html>
